@@ -79,6 +79,18 @@ let v2 = "America";
 let v3 = true;
 let v4 = 7;
 
+let newArr=[v1, v2, v3, v4];
+
+// using loop
+for (let i = 0; i < newArr.length; i++) {
+  if (Array.isArray(newArr[i])) {
+    console.log(newArr[i], ' is an array');
+  } else {
+    console.log(newArr[i], ' is not an array');
+  }
+}
+
+// Using manually
 if (Array.isArray(v1)) {
   console.log("v1 is an array.");
 } else {
